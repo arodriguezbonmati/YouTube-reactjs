@@ -1,0 +1,71 @@
+.logo_principal {
+    height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.mainSearch {
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 0px;
+    height: 26px;
+    margin-top: 17px;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.logo_search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search_button {
+    margin-top: 17px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.video {
+   margin: 25px;
+   transition: transform .2s;
+}
+
+.video:hover{
+    transform: scale(1.03);
+}
+
+.video_section {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text {
+    text-align: justify;
+    width: 320px;
+}
+
+.thumbnail {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.channel {
+    color: hsl(0, 2%, 29%);
+}
+
+.redcross {
+    height: 50px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.redcross:hover{
+    transform: scale(0.9);
+}
