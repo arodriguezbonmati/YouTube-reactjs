@@ -69,3 +69,28 @@
 .redcross:hover{
     transform: scale(0.9);
 }
+
+.recommendations_title {
+    margin: 0px;
+    margin-left: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.recommendations_thumbnail {
+    cursor: pointer;
+}
+
+.recommendations_section {
+    height: 607px;
+    width: 320px;
+    overflow: scroll;
+}
+
+.recommendations_thumbnail {
+    transition: transform .2s;
+}
+
+.recommendations_thumbnail:hover {
+    transform: scale(0.97);
+}

@@ -11,7 +11,7 @@ const App = (props) => {
   
   return <div className="App">
     <Header setVideoID={setVideoID} setShowVideos={setShowVideos} showVideos={showVideos}/>
-    <Content videoID={videoID} setShowVideos={setShowVideos} showVideos={showVideos}/>
+    <Content setVideoID={setVideoID} videoID={videoID} setShowVideos={setShowVideos} showVideos={showVideos}/>
   </div>;
 };
 
