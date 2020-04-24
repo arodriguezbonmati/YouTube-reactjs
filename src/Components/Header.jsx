@@ -76,7 +76,8 @@ const Header = (props) => {
                     className="thumbnail"
                     onClick={() => {
                       return (
-                        props.setVideoID(i.id.videoId), props.setShowVideos(false)
+                        props.setVideoID(i.id.videoId),
+                        props.setShowVideos(false)
                       );
                     }}
                   >
@@ -88,6 +89,7 @@ const Header = (props) => {
                   <div className="text">
                     <div className="title"> {i.snippet.title} </div>
                     <div className="channel"> {i.snippet.channelTitle}</div>
+                    <div className="description">{i.snippet.description}</div>
                   </div>
                 </div>
               );

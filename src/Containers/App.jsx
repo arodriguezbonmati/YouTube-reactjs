@@ -6,7 +6,6 @@ import Content from "../Components/Content"
 const App = (props) => {
 
   const [videoID, setVideoID] = useState(null);
-
   const [showVideos, setShowVideos] = useState(true);
   
   return <div className="App">

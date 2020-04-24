@@ -83,8 +83,9 @@
 
 .recommendations_section {
     height: 607px;
-    width: 320px;
+    width: fit-content;
     overflow: scroll;
+    
 }
 
 .recommendations_thumbnail {
@@ -93,4 +94,8 @@
 
 .recommendations_thumbnail:hover {
     transform: scale(0.97);
+}
+
+.description {
+    margin-top: 5px;
 }

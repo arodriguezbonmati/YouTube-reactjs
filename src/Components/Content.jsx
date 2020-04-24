@@ -4,31 +4,24 @@ import axios from "axios";
 import cross from "../Images/redcross.svg";
 
 const Content = (props) => {
-  const [recommendations, setRecommendations] = useState({
-    baseURL: "https://www.googleapis.com/youtube/v3/search",
-  });
+  const [recommendations, setRecommendations] = useState(null);
 
   useEffect(() => {
-    if (props.videoID !== "") {
-      axios
-        .get(recommendations.baseURL, {
-          params: {
-            part: "snippet",
-            relatedToVideoId: props.videoID,
-            type: "video",
-            key: process.env.REACT_APP_KEY,
-          },
-        })
-        .then((response) => {
-          setRecommendations(response.data.items);
-        })
-        .catch((e) => {
-          console.log(e);
-        });
-    }
+    axios
+      .get("https://www.googleapis.com/youtube/v3/search", {
+        params: {
+          part: "snippet",
+          relatedToVideoId: props.videoID,
+          type: "video",
+          key: process.env.REACT_APP_KEY,
+        },
+      })
+      .then((response) => {
+        setRecommendations(response.data.items);
+      });
   }, [props.videoID]);
 
-  const url = `https://www.youtube.com/embed/${props.videoID}`;
+  const url = `https://www.youtube.com/embed/${props.videoID}?rel=0`;
 
   const buttonHandler = () => {
     props.setShowVideos(true);
@@ -36,7 +29,7 @@ const Content = (props) => {
 
   return props.videoID !== null ? (
     <div className="video_section">
-      {console.log(recommendations)}
+      {console.log(props.videoID)}
       <div className="cross">
         <img
           className="redcross"
@@ -62,7 +55,7 @@ const Content = (props) => {
               <div
                 className="recommendations_thumbnail"
                 onClick={() => {
-                  return props.setVideoID(i.id.videoId);
+                  props.setVideoID(i.id.videoId);
                 }}
               >
                 <img
