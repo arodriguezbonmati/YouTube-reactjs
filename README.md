@@ -1,2 +1,11 @@
 # YouTube-reactjs
-YouTube API v3
+## Install
+
+```js
+npm install
+```
+
+## Run
+
+```js
+npm start
