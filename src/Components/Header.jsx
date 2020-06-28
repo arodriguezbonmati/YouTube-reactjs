@@ -17,7 +17,7 @@ const Header = (props) => {
       axios
         .get(searchURL.baseURL, {
           params: {
-            key: process.env.REACT_APP_KEY,
+            key: "AIzaSyB2Jn0gMhG_ycgZNSYGwiigyUYkXHnQhTs",
             part: "snippet",
             maxResults: searchURL.maxResults,
             q: searchURL.q,

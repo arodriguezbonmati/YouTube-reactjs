@@ -13,7 +13,7 @@ const Content = (props) => {
           part: "snippet",
           relatedToVideoId: props.videoID,
           type: "video",
-          key: process.env.REACT_APP_KEY,
+          key: "AIzaSyB2Jn0gMhG_ycgZNSYGwiigyUYkXHnQhTs",
         },
       })
       .then((response) => {
